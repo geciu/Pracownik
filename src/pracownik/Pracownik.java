@@ -1,15 +1,21 @@
 package pracownik;
+import java.util.ArrayList;
 
 public abstract class Pracownik {
 
 
     String imie;
-    String naziwsko;
+    String nazwisko;
     int wysEtatu;
 
-    Pracownik(String imie, String naziwsko, int wysEtatu){
+    public Pracownik(String imie, String naziwsko, int wysEtatu){
         this.imie = imie;
-        this.naziwsko = naziwsko;
+        this.nazwisko = naziwsko;
         this.wysEtatu = wysEtatu;
     }
+
+    public void opis(){
+        System.out.println("Pracownik: " + imie + nazwisko + " , Wysokosc etatu: " + wysEtatu);
+    }
+
 }
